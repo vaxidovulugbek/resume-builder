@@ -7,24 +7,50 @@ import { Text, Title } from "ui";
 import { useWindowSize } from "hooks";
 import { isArray } from "lodash";
 import { useTranslation } from "react-i18next";
+import res1 from "assets/imgs/resume_templates/res1.jpg";
+import res3 from "assets/imgs/resume_templates/res3.jpg";
+import res5 from "assets/imgs/resume_templates/res5.jpg";
+import res4 from "assets/imgs/resume_templates/res4.jpg";
+import res2 from "assets/imgs/resume_templates/res2.jpg";
+import res6 from "assets/imgs/resume_templates/res6.jpg";
 const PopularProducts: React.FC = () => {
 	const { t } = useTranslation();
+	// const cards = [
+	// 	{
+	// 		img: "https://marketplace.canva.com/EAFC-9sdKHg/2/0/1131w/canva-black-and-white-minimalist-simple-design-freelancer-resume-wIpoHMlKB6I.jpg",
+	// 	},
+	// 	{
+	// 		img: "https://marketplace.canva.com/EAEoLAxIWIo/1/0/1131w/canva-black-and-white-color-blocks-software-engineer-resume--RKK1cTL5JA.jpg",
+	// 	},
+	// 	{ img: "https://cdn-images.zety.com/templates/zety/minimo-4-classic-blue-navy-200@3x.png" },
+	// 	{
+	// 		img: "https://resumegenius.com/wp-content/uploads/2024-Modern-Resume-Template-Violet.png",
+	// 	},
+	// 	{
+	// 		img: "https://i.etsystatic.com/43852575/r/il/e184e7/4982637963/il_fullxfull.4982637963_byt7.jpg",
+	// 	},
+	// 	{ img: "https://resumegenius.com/wp-content/uploads/clean-resume-skin-orange.png" },
+	// 	{ img: "https://i.pinimg.com/736x/82/e0/92/82e092be16cf77305cbfff242ccdb7e9.jpg" },
+	// ];
 	const cards = [
 		{
-			img: "https://marketplace.canva.com/EAFC-9sdKHg/2/0/1131w/canva-black-and-white-minimalist-simple-design-freelancer-resume-wIpoHMlKB6I.jpg",
+			img: res1,
 		},
 		{
 			img: "https://marketplace.canva.com/EAEoLAxIWIo/1/0/1131w/canva-black-and-white-color-blocks-software-engineer-resume--RKK1cTL5JA.jpg",
 		},
-		{ img: "https://cdn-images.zety.com/templates/zety/minimo-4-classic-blue-navy-200@3x.png" },
 		{
-			img: "https://resumegenius.com/wp-content/uploads/2024-Modern-Resume-Template-Violet.png",
+			img: res3,
 		},
 		{
-			img: "https://i.etsystatic.com/43852575/r/il/e184e7/4982637963/il_fullxfull.4982637963_byt7.jpg",
+			img: res4,
 		},
-		{ img: "https://resumegenius.com/wp-content/uploads/clean-resume-skin-orange.png" },
-		{ img: "https://i.pinimg.com/736x/82/e0/92/82e092be16cf77305cbfff242ccdb7e9.jpg" },
+		{
+			img: res5,
+		},
+		{
+			img: res6,
+		},
 	];
 
 	const [slidesToShowNum, setSlidesToShow] = useState(4);
